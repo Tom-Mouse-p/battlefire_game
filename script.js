@@ -156,6 +156,7 @@ console.log(after_health);
 				document.getElementById('enemy_health_bar').style.width = width;
         }
         else{
+
         				console.log("something went wrong");
         }
         document.getElementById("attack").disabled = false;
