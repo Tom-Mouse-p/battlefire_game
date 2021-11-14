@@ -1,0 +1,13 @@
+{
+				"Minecraft" = {
+								"Steve" = {
+												"health" = 100;
+												"damage" = 20;
+								}
+								"Alex" = {
+												"health" = 90;
+												"damage" = 18;
+								}
+				}
+				
+}

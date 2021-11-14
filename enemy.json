@@ -1,0 +1,8 @@
+{
+				"Minecraft" = {
+								"Skeleton" = {
+												"health" = 100;
+												"damege" = 20;
+								}
+				}
+}
