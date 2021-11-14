@@ -1,13 +1,57 @@
 {
-				"Minecraft" = {
-								"Steve" = {
-												"health" = 100;
-												"damage" = 20;
-								}
-								"Alex" = {
-												"health" = 90;
-												"damage" = 18;
-								}
-				}
+				"notes" : "
+					<h3>Create Notes!</h3>
+            							<label>Note's Title</label><br>
+            							<input type="text" placeholder="Enter Title" required><br>
+            							<label>A Short Discription For Your Notes</label><br>
+            							<textarea placeholder="Discription" required></textarea>
+            							<br><label>A Thumbnail For Your Notes!<sup><i>(optional)</i></sup></label><br>
+            										<div class="drop-zone thumb_up">
+    <span class="drop-zone__prompt">Drop file here or click to upload</span>
+    <input type="file" name="myFile" class="drop-zone__input">
+  </div>
+  
+  <label>Upload Your Video!</label><br>
+  	<div class="drop-zone">
+    <span class="drop-zone__prompt">Drop file here or click to upload</span>
+    <input type="file" name="myFile" class="drop-zone__input" required>
+  </div>
+				",
 				
+				
+				"videos" : "
+					<div id="video_note">
+            											<div>
+            															<p>You can add up to 40 videos in a single course</p>
+            											</div>
+            											<div>
+            															<button onclick="hide_note()">X</button>
+            											</div>
+      		</div>
+            							
+           
+            												<h3>Create Course!</h3>
+            							<label>Course's Title</label><br>
+            							<input type="text" placeholder="Enter Title" required><br>
+            							<label>A Short Discription For Your Course</label><br>
+            							<textarea placeholder="Discription" required></textarea>
+            							
+            							
+            							
+            										<div class="multi_video" id="addmore1">
+            														
+            														
+            													<label>A Thumbnail Your Video!</label><br>
+            															<div class="drop-zone thumb_up">
+    <span class="drop-zone__prompt">Drop file here or click to upload</span>
+    <input type="file" name="myFile" class="drop-zone__input" required>
+  </div>
+  
+  <label>Upload Your Video!</label><br>
+  	<div class="drop-zone">
+    <span class="drop-zone__prompt">Drop file here or click to upload</span>
+    <input type="file" name="myFile" class="drop-zone__input" required>
+  </div>
+  	<button onclick="showInput()">Add More Videos</button>
+				"
 }
