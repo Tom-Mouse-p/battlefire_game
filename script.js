@@ -24,7 +24,6 @@ if( after_health <= 0){
 				
 			var width = `${after_health}px`;
 			
-			console.log(width);
 				document.getElementById('enemy_health_bar').style.width = width;
 
 alert("you won");
@@ -37,7 +36,6 @@ else{
 				
 				var width= `${after_health}px`;
 			
-			console.log(width);
 				document.getElementById('enemy_health_bar').style.width = width;
 }
 
@@ -47,7 +45,7 @@ document.getElementById("attack").disabled = true;
 
 document.getElementById("heal").disabled = true;
 
-enemy_turn();
+window.setTimeout("enemy_turn()",2000);
 });
 
 
@@ -63,29 +61,20 @@ document.getElementById("heal").addEventListener("click", function() {
 
 var player_health = document.getElementById('player_health'). value;
 
-var after_health = player_health + 5;
+var num = parseFloat(player_health);
 
-if( after_health <= 0){
-				document.getElementById('enemy_health').value = after_health;
+var after_health = num + 10;
+
+console.log(after_health);
+
+				document.getElementById('player_health').value = after_health;
 				
 			var width = `${after_health}px`;
 			
-			console.log(width);
-				document.getElementById('enemy_health_bar').style.width = width;
+				document.getElementById('player_health_bar').style.width = width;
 
-alert("you won");
 
-gameload();
 
-}
-else{
-				document.getElementById('enemy_health').value = after_health;
-				
-				var width= `${after_health}px`;
-			
-			console.log(width);
-				document.getElementById('enemy_health_bar').style.width = width;
-}
 
 
 
@@ -93,7 +82,7 @@ document.getElementById("attack").disabled = true;
 
 document.getElementById("heal").disabled = true;
 
-enemy_turn();
+window.setTimeout("enemy_turn()",2000);
 });
 
 
@@ -112,12 +101,10 @@ enemy_turn();
 function enemy_turn() {
 
         const tactic = [
-        				"attack", "attack", "heal", "attack"
+        				"attack", "attack", "heal",
         ]
 
 const random = Math.floor(Math.random() * tactic.length);
-
-console.log(random, tactic[random]);
         
         
         if(tactic[random] == "attack"){
@@ -134,7 +121,7 @@ if( after_phealth <= 0){
 
 			var width = `${after_phealth}px`;
 			
-			console.log(width);
+
 				document.getElementById('player_health_bar').style.width = width;
 
 alert("you loose");
@@ -147,7 +134,7 @@ else{
 				
 				var width = `${after_phealth}px`;
 			
-			console.log(width);
+			
 				document.getElementById('player_health_bar').style.width = width;
 
 }
@@ -155,7 +142,18 @@ else{
 
         }
         else if(tactic[random] == "heal"){
-        				console.log("healed")
+        				var enemy_health = document.getElementById('enemy_health'). value;
+
+var num = parseFloat(enemy_health);
+
+var after_health = num + 5;
+console.log(after_health);
+
+				document.getElementById('enemy_health').value = after_health;
+				
+			var width = `${after_health}px`;
+			
+				document.getElementById('enemy_health_bar').style.width = width;
         }
         else{
         				console.log("something went wrong");
