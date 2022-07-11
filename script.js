@@ -1,7 +1,7 @@
 //Load Function
 const none = "none";
 const flex = "flex";
-const pldmg = 100;
+const pldmg = 13;
 const plhel = 15;
 const endmg = 16;
 const enhel = 12;
