@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<title>Page title</title>
+				<link rel="stylesheet" href="style.css">
+				<style>
+								img{
+												max-width: 500%;
+								}
+				</style>
+</head>
+<body>
+				<div id="won" style="height: 100vh;width: 100vw; background: white; position: fixed; z-index: 10; display: flex; justify-content: center; align-items: center; font-weight: bold;color: #7040ff;font-size: 2em; padding: 20px;">
+								Restarting in few seconds...
+				</div>
+				
+				<div id="board">
+								<div id="gridbox">
+								<div class="character player">
+												<div class="health">
+																<input type="text" id="player_health" disabled>
+																<div class="health_bar"><div id="player_health_bar"></div></div>
+												</div>
+												
+												<div class="image">
+															<img class="character_img" src="img/Wraith_01_Idle_000.png" alt="character"> 
+												</div>
+								</div>
+							
+								
+								
+								<div class="character enemy">
+												<div class="health">
+																<input type="text" id="enemy_health" disabled>
+																<div class="health_bar"><div id="enemy_health_bar"></div></div>
+																</div>
+																
+												<div class="image">
+																<img class="character_img" src="img/Minotaur_01_Idle_000.png" alt="character"> 
+												</div>
+								</div>
+								<div>
+												<div id="chest_co">
+																<span id="chest_out">
+																				<span id="chest_in">
+																								<span id="chest_imco">
+																												
+																								</span>
+																				</span>
+																</span>
+												</div>
+								</div>
+				</div>
+			      	<div id="controls">
+																<button class="button" id="attack">attack</button>
+																<button class="button" id="heal">heal</button>
+															 <button class="button" id="ablity">Ability</button>
+								</div>
+								
+								
+							
+				</div>
+								<input id="player_ablity" type="hidden" >
+								
+								
+								<script src="script.js"></script>
+</body>
+</html>
